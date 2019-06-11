@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>My First Quiz</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+  </head> 
+  
+  <body>
+      <h1>Upperline Quiz</h1>
+      <form id = "quiz" name = "quiz">
+          
+          <p>1. Which property is used to change the background color in CSS?</p>
+          <input type = "radio" id = "mc" name = "question1" value = "bgcolor"> bgcolor<br>
+          <input type = "radio" id = "mc" name = "question1" value = "color"> color<br>
+          <input type = "radio" id = "mc" name = "question1" value = "background-color"> background-color<br>
+          
+          <p class = "questions">2. How do you create a function in Javascript?</p>
+          <input type = "radio" id = "mc" name = "question2" value = "function myFunction()"> function myFunction()<br>
+          <input type = "radio" id = "mc" name = "question2" value = "function = myFunction()"> function = myFunction()<br>
+          <input type = "radio" id = "mc" name = "question2" value = "function: myFunction()"> function: myFunction()<br> 
+          
+          <p class = "questions">3. Which HTML element defines navigation links?</p>
+          <input type = "radio" id = "mc" name = "question3" value = "<nagivation"> < nagivation > <br>
+          <input type = "radio" id = "mc" name = "question3" value = "<navigate>"> < navigate > <br>
+          <input type = "radio" id = "mc" name = "question3" value = "<nav>"> < nav> <br>
+          
+           
+          <p class = "questions">4. How do you add a comment in Javascript?</p>
+          <input type = "radio" id = "mc" name = "question4" value = "' This is a comment "> 'This is a comment <br>
+          <input type = "radio" id = "mc" name = "question4" value = "//This is a comment"> //This is a comment <br>
+          <input type = "radio" id = "mc" name = "question4" value = "<!--This is a comment -->"> < !--This is a comment --> <br>
+          
+          <p class = "questions">5. Which operator is used to assign a value to a variable?</p>
+          <input type = "radio" id = "mc" name = "question5" value = "x"> x <br>
+          <input type = "radio" id = "mc" name = "question5" value = "+"> + <br>
+          <input type = "radio" id = "mc" name = "question5" value = "*"> * <br>
+          
+           <input type="button" value="submit quiz" onclick = "check()"/>
+           
+    </form>  
+          
+         <div id = "after_submit">
+          <p id = "message"></p>
+         <p id = "number_correct">"you finished, good job"</p>
+         </div>
+ </body>
+   <script src="script.js"></script>
+ </html>
+         
