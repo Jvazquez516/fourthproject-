@@ -10,40 +10,38 @@ function check() {
 	let count = 0;
 	
 	if (question1=="background-color") {
-		count+1;
+		count+=1;
 	}
 	
 	if (question2=="function myFunction()") {
-		count+1;
+		count+=1;
 	}
 	
 	if (question3=="<nav>") {
-		count+1;
+		count+=1;
 	}
 	
 	if (question4=="//This is a comment") {
-		count+1;
+		count+=1;
 	}
 	
 	if (question5=="+") {
-		count+1;
+		count+=1;
 	}
 	
 	let messages = ["Great job!", "That's okay", "Maybe next time "];
 	
-	var score; 
-	    if (correct>5) {
-	    	console.log(messages[0])
-	    }
-	    
-    var score;
-    	 if (correct<3) {
-	    	console.log(messages[1])
-	    } 
-    var score;
-    	 if (correct<1) {
-	    	console.log(messages[2])
-	    } 
+	let score = 0; 
+	if (count>5) {
+		console.log(messages[0])
+		score = 0
+	} else if (count<3) {
+		console.log(messages[1])
+		score = 1
+	} else {
+		console.log(messages[2])
+		score = 2
+	} 
 	
 	alert("You got "+count+" correct")
 	document.getElementById("after_submit").style.visibility = "visible";
